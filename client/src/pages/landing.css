@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Parent container */
+.landing-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video styling */
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay content */
+.overlay-content {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-style: bold;
+    font-family: Major Mono Display;
+}
+
+.overlay-content p {
+    text-align: left;
+    font-family: orbitron;
+    font-size: 1.5rem;
+    /* font-weight: 500; */
+    color: white;
+}
+
+.view-btn {
+    display: flex;
+}
+
+.button-50 {
+  font-family: 'Orbitron', sans-serif;
+  padding: 10px 40px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #0b1f14, #06130d);
+  color: #9cffb3;
+  border: 1px solid #1d5e3b;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 10px;
+  margin-left: 50%;
+}
+
+/* Hover */
+.button-50:hover {
+  background: linear-gradient(135deg, #0f3d26, #0b2e1d);
+  color: #eafff0;
+  box-shadow:
+    0 0 8px rgba(52, 251, 88, 0.5),
+    0 0 18px rgba(52, 251, 88, 0.35);
+}
+
+/* Click */
+.button-50:active {
+  background: #34fb58;
+  color: #02140a;
+  box-shadow:
+    0 0 6px #34fb58,
+    0 0 25px #34fb58,
+    0 0 45px rgba(52, 251, 88, 0.8);
+  transform: scale(0.96);
+}
