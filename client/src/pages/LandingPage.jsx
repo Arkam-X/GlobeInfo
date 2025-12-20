@@ -1,8 +1,11 @@
-import backgroundVideo from "../assets/backgroundvd.mp4"
-import "./LandingPage.css"
+import backgroundVideo from "../assets/backgroundvd.mp4";
+import "../style/LandingPage.css";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
 
 export const LandingPage = () => {
+    const navigate = useNavigate();
+
   return (
     <div className="landing-container">
         <Navbar/>
@@ -16,7 +19,7 @@ export const LandingPage = () => {
                 <h1 className="hero-title">What's happening around the <span className="changing-word"></span>?</h1>
                 <div className="view-btn">
                     <p>Global news on the globe</p>
-                    <button type="button" className="button-50">view</button>
+                    <button type="button" className="button-50" onClick={() => navigate("/earth")}>view</button>
                 </div>
             </div>
         </div>
